@@ -1,0 +1,19 @@
+{
+  "name": "js-algorithm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "trie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Winters0727/JS-Algorithm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Winters0727/JS-Algorithm/issues"
+  },
+  "homepage": "https://github.com/Winters0727/JS-Algorithm#readme"
+}
