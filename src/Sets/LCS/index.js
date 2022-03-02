@@ -11,11 +11,7 @@ const LCS = (setA, setB) => {
       if (arrayA[j - 1] === arrayB[i - 1]) {
         matrix[i][j] = matrix[i - 1][j - 1] + 1;
       } else {
-        if (i <= j) {
-          matrix[i][j] = matrix[i][j - 1];
-        } else {
-          matrix[i][j] = matrix[i - 1][j];
-        }
+        matrix[i][j] = Math.max(matrix[i][j - 1], matrix[i - 1][j]);
       }
     }
   }
