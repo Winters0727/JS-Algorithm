@@ -1,5 +1,7 @@
 # 자바스크립트 알고리즘
 
+[**자바스크립트 알고리즘**](https://github.com/trekhleb/javascript-algorithms)을 공부한 내용을 기록하는 저장소입니다.
+
 ### 수학
 
 - [**에라토스테네스의 채**](src/Math/Eratosthenes/)
