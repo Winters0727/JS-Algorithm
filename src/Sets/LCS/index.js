@@ -17,26 +17,33 @@ const LCS = (setA, setB) => {
   }
 
   const subMaxLength = matrix[setB.length][setA.length];
+  const stack = [[setA.length, setB.length, ""]];
 
-  let x = setA.length;
-  let y = setB.length;
-  let subSequence = "";
+  let answer = null;
 
-  while (x > 0 && y > 0) {
-    if (arrayA[x - 1] === arrayB[y - 1]) {
-      subSequence = arrayA[x - 1] + subSequence;
-      x -= 1;
-      y -= 1;
-    } else {
-      if (x >= y) {
-        x -= 1;
+  while (stack.length > 0) {
+    const [x, y, string] = stack.pop();
+
+    if (string.length === subMaxLength) {
+      answer = [string, subMaxLength];
+      break;
+    }
+
+    if (x > 0 && y > 0) {
+      if (arrayA[x - 1] === arrayB[y - 1]) {
+        stack.push([x - 1, y - 1, arrayA[x - 1] + string]);
       } else {
-        y -= 1;
+        if (matrix[y][x] === matrix[y - 1][x]) {
+          stack.push([x, y - 1, string]);
+        }
+        if (matrix[y][x] === matrix[y][x - 1]) {
+          stack.push([x - 1, y, string]);
+        }
       }
     }
   }
 
-  return [subSequence, subMaxLength];
+  return answer;
 };
 
 module.exports = LCS;
