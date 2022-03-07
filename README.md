@@ -12,6 +12,7 @@
 - [**멱집합**](src/Sets/Power%20Set/)
 - [**최장 공통 부분순열**](src/Sets/LCS/)
 - [**최장 증가 부분순열**](src/Sets/LIS/)
+- [**0/1 KnapSack**](src/Sets/Knapsack/)
 
 ### 문자열
 
@@ -19,6 +20,10 @@
 - [**레벤슈타인 거리**](src/String/Levenshtein%20Distance/)
 - [**KMP 알고리즘**](src/String/KMP%20Algorithm/)
 - [**Z 알고리즘**](src/String/Z%20Algorithm/)
+
+### 그래프
+
+- [**최소신장트리 - 크루스칼**](src/Graphs/Kruskal/)
 
 ### 자료구조
 
