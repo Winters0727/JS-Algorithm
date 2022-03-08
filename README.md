@@ -12,7 +12,7 @@
 - [**멱집합**](src/Sets/Power%20Set/)
 - [**최장 공통 부분순열**](src/Sets/LCS/)
 - [**최장 증가 부분순열**](src/Sets/LIS/)
-- [**0/1 KnapSack**](src/Sets/Knapsack/)
+- [**0/1 배낭 문제**](src/Sets/Knapsack/)
 
 ### 문자열
 
